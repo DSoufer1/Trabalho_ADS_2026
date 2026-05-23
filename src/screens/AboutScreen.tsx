@@ -4,10 +4,7 @@ import { theme } from '../constants/theme';
 
 const TEAM = [
   // TODO: substituir pelos nomes reais dos integrantes da equipe.
-  'Integrante 1',
-  'Integrante 2',
-  'Integrante 3',
-  'Integrante 4',
+  'Douglas de Souza Ferreira',
 ];
 
 export function AboutScreen() {
