@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "PointGov",
+    "slug": "pointgov",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F4C81"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "O PointGov usa a câmera para você fotografar o problema urbano relatado.",
+        "NSPhotoLibraryUsageDescription": "O PointGov acessa suas fotos para anexar uma imagem ao registro do problema.",
+        "NSLocationWhenInUseUsageDescription": "O PointGov usa sua localização para registrar onde o problema urbano foi encontrado."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0F4C81"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "O PointGov usa a câmera para você fotografar o problema urbano relatado.",
+          "photosPermission": "O PointGov acessa suas fotos para anexar uma imagem ao registro do problema."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "O PointGov usa sua localização para registrar onde o problema urbano foi encontrado."
+        }
+      ],
+      "expo-sqlite"
+    ]
+  }
+}
